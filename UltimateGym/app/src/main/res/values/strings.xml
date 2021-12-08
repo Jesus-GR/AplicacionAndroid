@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">UltimateGym</string>
+    <string name="email">Correo electrónico</string>
+    <string name="password">Contraseña</string>
+    <string name="login">Login</string>
+    <string name="register">Registro</string>
+    <string name="entrarGoogle">Entrar con google</string>
+
+    <string name="forgotPassword">Forgot Password?</string>
+    <string name="nuevo">¿Eres nuevo?</string>
+    <string name="nombre">Nombre</string>
+    <string name="apellidos">Apellidos</string>
+    <string name="edad">Edad</string>
+    <string name="altura">Altura</string>
+    <string name="peso">Peso</string>
+    <string name="imc">IMC</string>
+    <string name="fechNac">Fecha Nacimiento</string>
+    <string name="rutinas">Rutinas</string>
+    <string name="nuevaRutina">Nueva rutina</string>
+    <string name="perfil">Perfil</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="salir">Salir</string>
+    <string name="editar">Editar</string>
+    <string name="nombreNuevaRutina">Nombre Rutina</string>
+    <string name="diasemana">Dia de la semana </string>
+    <string name="lunes">Lunes</string>
+    <string name="martes">Martes</string>
+    <string name="miercoles">Miércoles</string>
+    <string name="jueves">Jueves</string>
+    <string name="viernes">Viernes</string>
+    <string name="sabado">Sábado</string>
+    <string name="domingo">Domingo</string>
+    <string name="musculoNuevaRutina">Músculo que trabaja</string>
+    <string name="imagenNuevaRutina">URL de una imagen de internet</string>
+    <string name="addNuevaRutina">Añadir rutina</string>
+
+
+</resources>
