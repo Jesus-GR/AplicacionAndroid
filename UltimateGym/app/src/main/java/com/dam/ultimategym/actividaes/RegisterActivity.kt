@@ -15,7 +15,6 @@ class RegisterActivity : AppCompatActivity() {
     
     private lateinit var auth: FirebaseAuth
     private lateinit var binding: ActivityRegisterBinding
-    var idUsuario:Int = 0
     
     override fun onCreate(savedInstanceState: Bundle?) {
 
@@ -45,9 +44,8 @@ class RegisterActivity : AppCompatActivity() {
             auth.createUserWithEmailAndPassword(email,contraseña).addOnCompleteListener(this){
 
                 if(it.isSuccessful){
-
                     val usuario = com.dam.ultimategym.entidades.Usuario(
-                        idUsuario++,nombre,apellidos,email,contraseña,fechaNac,altura,peso,imc)
+                        0,nombre,apellidos,email,contraseña,fechaNac,altura,peso,imc)
                     db.usuarioDao().insert(usuario)
                     val intencion = Intent(this, LoginActivity::class.java)
                     startActivity(intencion)

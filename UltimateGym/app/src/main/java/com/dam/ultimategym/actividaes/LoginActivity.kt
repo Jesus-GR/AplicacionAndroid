@@ -36,9 +36,7 @@ class LoginActivity : AppCompatActivity() {
         // y realiar alguna accion a raiz de eso
         //googleResponse es una función que definimos más abajo
     }
-
-
-
+    
     private lateinit var  binding : ActivityLoginBinding
     lateinit var email:String
     lateinit var contraseña:String

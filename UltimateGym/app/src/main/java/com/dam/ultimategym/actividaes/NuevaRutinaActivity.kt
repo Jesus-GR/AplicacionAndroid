@@ -9,7 +9,7 @@ import com.dam.ultimategym.entidades.Rutinas
 
 class NuevaRutinaActivity : AppCompatActivity() {
     private lateinit var  binding: ActivityNuevaRutinaBinding
-    var idRutina = 7
+    private lateinit var db:UltimateGymDatabase
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityNuevaRutinaBinding.inflate(layoutInflater)
@@ -19,13 +19,26 @@ class NuevaRutinaActivity : AppCompatActivity() {
     }
 
     fun registrarNuevaRutina(){
-        val nombreRutina:String = binding.nameNuevaRutinaText.text as String
-        val musculoRutina:String = binding.musculoNuevaRutinaText.text as String
-        val diaSemanaRutina:String = binding.diaSemanaNuevaRutinaText as String
-        val imagenRutina:String = binding.imagenNuevaRutinaText as String
-        val nuevaRutina = Rutinas(20,nombreRutina,musculoRutina,diaSemanaRutina,imagenRutina)
+        val nombreRutina: String = binding.nameNuevaRutinaText.text.toString()
+        val musculoRutina:String = binding.musculoNuevaRutinaText.text.toString()
+        val diaSemanaRutina:String = binding.diaSemanaNuevaRutinaText.text.toString()
+         lateinit var imagenRutina:String
+        if(binding.imagenNuevaRutinaText.text.isNullOrEmpty()){
+             imagenRutina = "https://w7.pngwing.com/pngs/1018/952/png-transparent-man-holding-barbell-garage-gym-fitness-centre-computer-icons-physical-fitness-bodybuilding-white-logo-monochrome.png"
+        }else{
+            imagenRutina = binding.imagenNuevaRutinaText.text.toString()
+        }
 
-        val db = UltimateGymDatabase.getAppDatabase(this)
+        val nuevaRutina = Rutinas(0,nombreRutina,musculoRutina,diaSemanaRutina,imagenRutina)
+
+        db = UltimateGymDatabase.getAppDatabase(this)
         var rutina = db.rutinasDao().insert(nuevaRutina)
+        setResult(RESULT_OK)
+        finish()
+    }
+
+    override fun onBackPressed() {
+        setResult(RESULT_CANCELED)
+        super.onBackPressed()
     }
 }

@@ -35,6 +35,8 @@
         android:title="@string/sabado" />
     <item android:id="@+id/diaDomingo"
         android:title="@string/domingo" />
+    <item android:id="@+id/todos"
+        android:title="Mostrar todos" />
 
 </menu>
 

@@ -26,9 +26,18 @@ import com.dam.ultimategym.entidades.Rutinas
  * gestionar pulsaciones. Es una lamda que no recibe ni devuelve nada. La pasamos como parámetro a la clase
  * adaptador. Esta función la pasamos al contructor como parámetro en el routinesActivity
  */
-class RutinaAdaptador( var datos:MutableList<Rutinas>,
-                       val gestionarPulsacionCorta:(Rutinas) -> Unit,
-                       val gestionarPulsacionLarga: (MenuItem,Rutinas)-> Boolean):RecyclerView.Adapter<RutinaAdaptador.RutinaContenedor>(){
+class RutinaAdaptador( val gestionarPulsacionCorta:(Rutinas) -> Unit,
+                       val gestionarPulsacionLarga: (MenuItem,Rutinas)-> Boolean):RecyclerView.Adapter<RutinaAdaptador.RutinaContenedor>() {
+
+    var datos:MutableList<Rutinas> = mutableListOf()
+        set(value) {
+            field = value
+            notifyDataSetChanged()
+
+
+        }
+
+
     /**
      * Este es el primer método que llama nuestro adaptador para determinar el tamaño de la colección
      * de datos que va a manejar y saber cuantos contenedores tiene que hacer
@@ -66,9 +75,6 @@ class RutinaAdaptador( var datos:MutableList<Rutinas>,
          */
         holder.bindRutinas(datos[position])
     }
-
-
-
     /**
      * El conenedor siempre debe recibir la vinculación de vistas del layout
      * Al constructor de viewHOLDER tenemos que pasarle la raiz del layout que vamos a utilizar
