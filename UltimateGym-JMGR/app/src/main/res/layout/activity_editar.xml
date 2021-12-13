@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".actividaes.EditarActivity"
+    android:background="@color/red_wine">
+
+
+    <ImageView
+        android:id="@+id/imageRegister"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/app_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/fieldEditaTitle"
+        app:layout_constraintHorizontal_bias="0.5"
+        />
+
+
+    <TextView
+        android:id="@+id/fieldEditaTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nuevaRutina"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageRegister"
+        app:layout_constraintBottom_toTopOf="@+id/nameEditaRutinaField"
+        android:textColor="@color/white"
+        app:layout_constraintHorizontal_bias="0.5"
+
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nameEditaRutinaField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/nombreNuevaRutina"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fieldEditaTitle"
+        app:layout_constraintBottom_toTopOf="@+id/musculoEditaRutinaField"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nameEditaRutinaText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/musculoEditaRutinaField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/musculoNuevaRutina"
+        android:layout_marginHorizontal="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fieldEditaTitle"
+        app:layout_constraintBottom_toTopOf="@+id/diaSemanaEditaRutinaField">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/musculoEditaRutinaText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/diaSemanaEditaRutinaField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="@string/diasemana"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/musculoEditaRutinaField"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/diaSemanaEditaRutinaText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/imagenEditaRutinaField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/imagenNuevaRutina"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/diaSemanaEditaRutinaField"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/imagenEditaRutinaText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/editRutineButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="@string/editarRutina"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagenEditaRutinaField"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red_wine">
+
+
+    <ImageView
+        android:id="@+id/imagePerfil"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/app_logo"
+        app:layout_constraintBottom_toBottomOf="@+id/nombrePerfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="@string/nombre"
+        android:gravity="center"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagePerfil"
+        app:layout_constraintBottom_toTopOf="@+id/nombrePerfil"
+
+
+        />
+
+    <TextView
+        android:id="@+id/nombrePerfil"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:textColor="@color/red_wine"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagePerfil"
+        app:layout_constraintBottom_toTopOf="@+id/apellidosPerfil"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="@string/apellidos"
+        android:gravity="center"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombrePerfil"
+        app:layout_constraintBottom_toTopOf="@+id/apellidosPerfil"
+        />
+
+    <TextView
+        android:id="@+id/apellidosPerfil"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="Apellidos"
+        android:textColor="@color/red_wine"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombrePerfil"
+        app:layout_constraintBottom_toTopOf="@+id/emailPerfil"
+         />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="@string/email"
+        android:gravity="center"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/apellidosPerfil"
+        app:layout_constraintBottom_toTopOf="@+id/emailPerfil"
+        />
+
+    <TextView
+        android:id="@+id/emailPerfil"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="Email"
+        android:textColor="@color/red_wine"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@id/fecNacPerfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/apellidosPerfil" />
+
+    <TextView
+        android:id="@+id/fecha"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:gravity="center"
+        android:text="@string/fechNac"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@id/fecNacPerfil"
+        app:layout_constraintEnd_toEndOf="@+id/altura"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailPerfil"
+        app:layout_constraintHorizontal_bias="0.3" />
+
+    <TextView
+        android:id="@+id/altura"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="@string/altura"
+        android:gravity="center"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/fecha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailPerfil"
+        app:layout_constraintBottom_toTopOf="@+id/alturaPerfil"
+        />
+    <TextView
+        android:id="@+id/fecNacPerfil"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="Fecha nacimiento"
+        android:textColor="@color/red_wine"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/pesoPerfil"
+        app:layout_constraintEnd_toStartOf="@+id/alturaPerfil"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailPerfil" />
+
+    <TextView
+        android:id="@+id/alturaPerfil"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="Altura"
+        android:textColor="@color/red_wine"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fecNacPerfil"
+        app:layout_constraintTop_toBottomOf="@+id/emailPerfil"
+        app:layout_constraintBottom_toTopOf="@+id/pesoPerfil"/>
+
+    <TextView
+        android:id="@+id/peso"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="@string/peso"
+        android:gravity="center"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imc"
+        app:layout_constraintTop_toBottomOf="@+id/fecNacPerfil"
+        app:layout_constraintBottom_toTopOf="@+id/pesoPerfil"
+        />
+    <TextView
+        android:id="@+id/imc"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="@string/imc"
+        android:gravity="center"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/peso"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alturaPerfil"
+        app:layout_constraintBottom_toTopOf="@+id/imcPerfil"
+        />
+    <TextView
+        android:id="@+id/pesoPerfil"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="Peso"
+        android:textColor="@color/red_wine"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imcPerfil"
+        app:layout_constraintTop_toBottomOf="@+id/fecNacPerfil" />
+    <TextView
+        android:id="@+id/imcPerfil"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="I.M.C"
+        android:textColor="@color/red_wine"
+        android:textSize="30dp"
+        app:layout_constraintStart_toEndOf="@+id/pesoPerfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alturaPerfil"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
