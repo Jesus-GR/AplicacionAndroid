@@ -5,9 +5,11 @@ Esta es la pantalla principal de nuestra aplicación. Antes de poder entrar, ten
 <img width="364" alt="Captura de pantalla 2021-12-14 a las 17 40 35" src="https://user-images.githubusercontent.com/72436145/146042051-dfbe7591-83c8-4018-8212-d1970a13d94b.png">
 
 Rellenamos los campos correctamente para poder registrarnos
+
 <img width="357" alt="Captura de pantalla 2021-12-14 a las 17 42 20" src="https://user-images.githubusercontent.com/72436145/146042298-ccddd2ba-93c9-48b0-9ee8-d4c8ed9b2da5.png">
 
 Ya con el usuario creado, podemos hacer el login y entrar en la app
+
 <img width="361" alt="Captura de pantalla 2021-12-14 a las 17 42 55" src="https://user-images.githubusercontent.com/72436145/146042429-2042b8e4-553e-4ba4-9661-789e5189bcb8.png">
 
 Esta es la página principal, donde podemos ver las rutinas del gym.
